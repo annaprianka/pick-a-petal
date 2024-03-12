@@ -1,20 +1,19 @@
 import "./register.css"
 
-
 export default function Register() {
-  return (
-    <div className="register">
+    return (
+        <div className="register">
+      <span className="registerTitle">Register</span>
       <form className="registerForm">
-            <span className="registerTitle">Register</span>
-            <label >Username</label>
-            <input type="text" className="registerInput" placeholder="Enter your username..."/>
-            <label >Email</label>
-            <input type="text" className="registerInput" placeholder="Enter your email..."/>
-            <label >Password</label>
-            <input type="password" className="registerInput" placeholder="Enter your password..."/>
-            <button className="registerBttn">Register</button>
-            <button className="loginRgBttn">Login</button>
+        <label>Username</label>
+        <input className="registerInput" type="text" placeholder="Enter your username..." />
+        <label>Email</label>
+        <input className="registerInput" type="text" placeholder="Enter your email..." />
+        <label>Password</label>
+        <input className="registerInput" type="password" placeholder="Enter your password..." />
+        <button className="registerBttn">Register</button>
       </form>
+        <button className="registerLoginBttn">Login</button>
     </div>
-  )
+    )
 }

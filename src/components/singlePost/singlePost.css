@@ -31,6 +31,13 @@
     cursor: pointer;
 }
 
+.singlePostIcon:first-child {
+    color: purple;
+  }
+  .singlePostIcon:last-child {
+    color: tomato;
+  }  
+
 .singlePostInfo{
     margin-bottom: 20px;
     display: flex;
@@ -39,14 +46,17 @@
     color: #a21f49;
     font-family: "Varela Round", sans-serif;
 }
-
-.singlePostDes{
+.singlePostAuthor{
+    margin-left: 5px;
+  }
+  
+.singlePostDesc{
     color: #666;
     font-size: 18px;
     line-height: 25px;
 }
 
-.singlePostDes::first-letter{
+.singlePostDesc::first-letter{
     margin-left: 20px;
     font-size: 30px;
     font-weight: 600;
