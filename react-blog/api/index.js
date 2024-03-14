@@ -8,12 +8,21 @@ const postRoute = require("./routes/posts");
 const categoryRoute = require("./routes/categories");
 
 
+const mongoose = require('mongoose');
 const { MongoClient, ServerApiVersion } = require('mongodb');
 const uri = "mongodb+srv://prianka:prianka@cluster0.dxgnm56.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
 
 app.use(express.json());
 
+
+mongoose.connect('mongodb+srv://prianka:prianka@cluster0.dxgnm56.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {});
+
+const db = mongoose.connection;
+db.on('error', console.error.bind(console, 'MongoDB connection error:'));
+db.once('open', () => {
+    console.log('Connected to MongoDB database');
+});
 
 
 

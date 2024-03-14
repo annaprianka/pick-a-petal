@@ -39,8 +39,8 @@ router.put("/:id", async (req, res) => {
 
   //GET ALL POSTS
 router.get("/", async (req, res) => {
-    const username = req.query.user;
-    const catName = req.query.cat;
+    const username = req.query.user; //Filtern nach Username
+    const catName = req.query.cat; // filtern nach Category
     try {
       let posts;
       if (username) {
