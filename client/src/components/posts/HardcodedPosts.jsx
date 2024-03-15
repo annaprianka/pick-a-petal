@@ -4,7 +4,7 @@ import PostSteckling from "../post/HardcodedPost/PostSteckling"
 import Post from "../post/Post"
 import "./posts.css"
 
-export default function Posts() {
+export default function HardcodedPosts() {
   return (
     <div className="posts"> 
       <PostGoogle/>
